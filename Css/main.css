@@ -1,0 +1,32 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&display=swap');
+
+
+*{
+margin: auto;
+}
+
+header {
+    background: #2d1481
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+    border-bottom: solid 8px #05be87;
+}
+
+h1,h2{
+     font-family: "Bitcount Single Ink", system-ui;
+     font size: 50 px;
+}
+
+p {
+    color: #b62488;
+    font-family: "Bitcount Single Ink", system-ui;
+}
+
+#foto_profecional {
+    width: 250px;
+    border-radius: 20px;
+    float: right;
+}
