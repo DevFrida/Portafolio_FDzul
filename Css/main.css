@@ -1,32 +1,105 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&display=swap');
-
 
 *{
 margin: auto;
 }
 
 header {
-    background: #2d1481
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px; 
-    border-bottom: solid 8px #05be87;
+ background: #2d1481;
+ text-align:center;
+ margin-bottom: 50px;
+ margin-top: 50px;
+ border-bottom: solid 15px #05be87;
 }
 
+
 h1,h2{
-     font-family: "Bitcount Single Ink", system-ui;
-     font size: 50 px;
+font-family: "Bitcount Single Ink", system-ui;
+ font-size: 50 px;
 }
 
 p {
-    color: #b62488;
-    font-family: "Bitcount Single Ink", system-ui;
+ color: #b62488;
+ font-family: "Bitcount Single Ink", system-ui;
 }
 
+
+
 #foto_profecional {
-    width: 250px;
-    border-radius: 20px;
-    float: right;
+ width: 250px;
+ border-radius: 20px;
+ float: right;
+}
+
+main{
+ overflow:hidden;
+}
+
+section{
+overflow: hidden;
+}
+
+#Proyectos{
+
+padding: 20px 30px;
+
+border-top:solid 5px #b62488 ;
+margin-top: 30px;
+ text-align: center;
+}
+
+
+
+.Proyecto{
+float:left ;
+width: 30%;
+margin-top:20px;
+}
+
+.Proyecto img{
+ width: 90%;
+ border-radius: 15px;
+ margin-top: 10px
+}
+
+.Proyecto p{
+text-align: center;
+padding:10px 20px;
+color:blueviolet;
+}
+
+.Proyecto h3{
+color:aquamarine;
+}
+
+#Habilidades{
+overflow: hidden;
+margin-top: 20px;
+padding-bottom: 20px;
+ border-top: solid 5px #2d1481;
+margin-bottom: 30px;
+}
+
+progress{
+ width: 100%;
+ height: 25px;
+ border-radius: 5px;
+margin: 10px 0 ;
+
+}
+
+#lista_tecnologias{
+list-style: none;
+ display: grid;
+ margin-left: 0;
+ gap: 15px;
+}
+
+
+#lista_tecnologias li{
+ background-color: brown;
+ color: #fff;
+ padding:12px 20px ;
+ border-radius: 25px;
+ text-align: center;
 }
