@@ -1,70 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&display=swap');
-
 * {
     margin: auto;
 }
 
 body {
     font-family: "lato", sans-serif;
+    background-color: #F3E5F5;
+    color: #424242;
 }
 
 header {
-    background: #2d1481;
+    background: #9575CD;
     text-align: center;
     margin-bottom: 20px;
     border: solid 4px #000000;
-    border-bottom: solid 15px #05be87;
-    padding: 50px;
+    border-bottom: solid 15px #de6db8;
+    padding: 50px 20PX;
 }
 
 h1 {
     font-family: "Rubik", sans-serif;
     font-size: 40px;
+    color: #ffffff;
 }
+
 h2 {
     font-family: "Rubik", sans-serif;
-    font-size: 20px;
+    font-size: 28px;
+    color: #9575CD;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h3 {
+    color: #9575CD;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: "Rubik", sans-serif;
 }
 
 p {
-    color: #b62488;
-    font-family: "Bitcount Single Ink", system-ui;
+    color: #424242;
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
 }
+
 nav {
     overflow: hidden;
     padding: 20px 0;
+    background-color: #FFCDD2;
 }
+
 .bi {
-    color: #000000;
+    color: #fffafa;
 }
 
 #menu_principal {
     list-style-type: none;
     display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
 #menu_principal a {
     text-decoration: none;
-    color: #b62488;
-    font-size: 30px;
+    color: #9575CD;
+    font-size: 20px;
     font-weight: bolder;
     padding: 8px;
 }
 
 #menu_principal a:hover {
-    color: cornflowerblue;
-    background-color: #2d1481;
-
+    color: #ffffff;
+    background-color: #9575CD;
+    border-radius: 5px;
 }
 
 #foto_profecional {
-    width: 250px;
-    border-radius: 20px;
+    width: 400px;
+    border-radius: 50px;
     float: right;
+    border: 5px solid #F8BBD0;
+    margin: 0 0 25px 25px;
 }
 
 main {
     overflow: hidden;
+    padding: 0 5%;
 }
 
 section {
@@ -72,14 +93,18 @@ section {
 }
 
 #Proyectos {
-    padding: 20px 30px;
-    border-top: solid 5px #b62488;
+    padding: 20px 20px;
+    border-top: solid 5px #F8BBD0;
     margin-top: 30px;
     text-align: center;
 }
 
 #lista_proyectos {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .Proyecto {
@@ -89,6 +114,7 @@ section {
 
 .Proyecto img {
     width: 90%;
+    height: auto;
     border-radius: 15px;
     margin-top: 10px
 }
@@ -96,11 +122,11 @@ section {
 .Proyecto p {
     text-align: justify;
     padding: 10px 20px;
-    color: blueviolet;
+    color: #424242;
 }
 
 .Proyecto h3 {
-    color: aquamarine;
+    color: rgb(167, 102, 184);
     font-weight: bolder;
 }
 
@@ -108,67 +134,148 @@ section {
     overflow: hidden;
     margin-top: 20px;
     padding-bottom: 20px;
-    border-top: solid 5px #2d1481;
+    border-top: solid 5px #9575CD;
     margin-bottom: 30px;
 }
 
-progress {
-    width: 100%;
-    height: 25px;
-    border-radius: 5px;
-    margin: 10px 0;
-
+.habilidad-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin: 25px auto;
+    padding: 0;
 }
 
-#Lista_tecnologias {
-    list-style: none;
+.barra-contenedor {
     display: flex;
-    margin-left: 0;
+    width: 100%;
+    align-items: center;
     gap: 15px;
 }
 
-.lista_tecnologias li {
-    background-color: brown;
-    color: #fff;
-    padding: 12px 20px;
-    border-radius: 25px;
-    text-align: center;
+.barra-contenedor progress {
+    width: 100%;
+    height: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FFCDD2;
 }
 
-#contactos {
-    padding: 40px;
-}
-
-.campos {
-    width: 50%;
-    clear: both;
-    font-size: 28px;
-}
-
-.campos label {
-    padding-right: 20px;
-}
-
-.campos input,select {
-    padding: 10px;
-    border: solid 2px #c55297;
-    width: 50%;
-    font-size: 20px;
+.barra-contenedor progress::-webkit-progress-value {
+    background-color: #9f73eb;
     border-radius: 10px;
 }
 
-.campos button {
-    background-color: #c55297;
-    color: #ffffff;
+.barra-contenedor progress::-moz-progress-bar {
+    background-color: #b083ff;
+    border-radius: 10px;
+}
+
+.barra-contenedor .porcentaje {
+    font-weight: bold;
+    color: #9575CD;
+}
+
+#Habilidades h2 {
+    color: #9575CD;
+    margin-bottom: 30px;
+}
+
+#Habilidades h3 {
+    color: #9575CD;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-left: 0;
+}
+
+
+.Lista_tecnologias {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.Lista_tecnologias li {
+    background-color: #F8BBD0;
+    color: #9575CD;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-align: center;
+    border: 2px solid #9575CD;
+}
+
+#contactos {
+    background-color: #FFCDD2;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.campos {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    font-size: 35px;
+}
+
+#Contactos p {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.campos span {
+    font-size: 25px;
+    font-weight: normal;
+    color: #424242;
+    margin-left: 5px;
+}
+
+.campos label {
+    display: block;
+    margin-bottom: 5px;
     font-size: 18px;
-    padding: 20px 15px;
-    border-radius: 18px;
+    color: #9575CD;
+}
+
+.campos input,
+select {
+    padding: 12px;
+    border: solid 2px#F8BBD0;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.campos button {
+    background-color: #9575CD;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
 }
 
 footer {
     overflow: hidden;
-    padding: 40px 0;
-    background-color: #05be87;
+    padding: 20px 0;
+    background-color: #9575CD;
     text-align: center;
-    border-top: solid 5 px crimson;
+    border-top: solid 5px #F8BBD0;
 }
